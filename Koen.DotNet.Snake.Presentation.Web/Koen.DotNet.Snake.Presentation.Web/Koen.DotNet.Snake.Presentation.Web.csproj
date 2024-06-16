@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>aspnet-Koen.DotNet.Snake.Presentation.Web-295D7C20-4F34-4A56-993F-33C556451C8D</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true"/>
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Koen.DotNet.Snake.Infrastructure.Identity\Koen.DotNet.Snake.Infrastructure.Identity.csproj" />
+        <ProjectReference Include="..\Koen.DotNet.Snake.Presentation.Web.Client\Koen.DotNet.Snake.Presentation.Web.Client.csproj"/>
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.*"/>
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.*"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.*"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.*"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.*"/>
+    </ItemGroup>
+
+</Project>

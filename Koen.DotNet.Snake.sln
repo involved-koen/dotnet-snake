@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Core", "1. Core", "{3DAA13C5-C8D4-4234-AE3F-DCD681A472D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application", "2. Application", "{7E82642C-C119-4297-8573-49221AB4E052}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Inftastructure", "3. Inftastructure", "{46577714-3704-472D-9BB8-CDB612EFC7EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Presentation", "4. Presentation", "{AF620FAB-4859-4AD5-B4CF-7A4846B50F5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koen.DotNet.Snake.Infrastructure.DataAccess", "Koen.DotNet.Snake.Infrastructure.DataAccess\Koen.DotNet.Snake.Infrastructure.DataAccess.csproj", "{8C031828-FFDA-4515-9A73-ACEBBC7FD2F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koen.DotNet.Snake.Core.Domain", "Koen.DotNet.Snake.Core.Domain\Koen.DotNet.Snake.Core.Domain.csproj", "{68E2BD7C-3BF8-478D-B34E-83178639F49B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koen.DotNet.Snake.Application.Contracts", "Koen.DotNet.Snake.Application.Contracts\Koen.DotNet.Snake.Application.Contracts.csproj", "{8A802E50-DE68-41A8-9A59-1A03FEEE3BEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koen.DotNet.Snake.Infrastructure.Identity", "Koen.DotNet.Snake.Infrastructure.Identity\Koen.DotNet.Snake.Infrastructure.Identity.csproj", "{7196C3D8-662D-474F-ABAC-300F36DA11EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koen.DotNet.Snake.Presentation.Web", "Koen.DotNet.Snake.Presentation.Web\Koen.DotNet.Snake.Presentation.Web\Koen.DotNet.Snake.Presentation.Web.csproj", "{00C49310-AA76-4DBC-A4D6-AA530A3A9C96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koen.DotNet.Snake.Presentation.Web.Client", "Koen.DotNet.Snake.Presentation.Web\Koen.DotNet.Snake.Presentation.Web.Client\Koen.DotNet.Snake.Presentation.Web.Client.csproj", "{2B672915-F753-49A8-8FF3-CA03B4BA662F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koen.DotNet.Snake.Application.Business", "Koen.DotNet.Snake.Application.Business\Koen.DotNet.Snake.Application.Business.csproj", "{DB46DD8E-E39F-4A0D-8384-F3C1686515D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C031828-FFDA-4515-9A73-ACEBBC7FD2F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C031828-FFDA-4515-9A73-ACEBBC7FD2F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C031828-FFDA-4515-9A73-ACEBBC7FD2F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C031828-FFDA-4515-9A73-ACEBBC7FD2F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68E2BD7C-3BF8-478D-B34E-83178639F49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68E2BD7C-3BF8-478D-B34E-83178639F49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68E2BD7C-3BF8-478D-B34E-83178639F49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68E2BD7C-3BF8-478D-B34E-83178639F49B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A802E50-DE68-41A8-9A59-1A03FEEE3BEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A802E50-DE68-41A8-9A59-1A03FEEE3BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A802E50-DE68-41A8-9A59-1A03FEEE3BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A802E50-DE68-41A8-9A59-1A03FEEE3BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7196C3D8-662D-474F-ABAC-300F36DA11EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7196C3D8-662D-474F-ABAC-300F36DA11EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7196C3D8-662D-474F-ABAC-300F36DA11EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7196C3D8-662D-474F-ABAC-300F36DA11EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00C49310-AA76-4DBC-A4D6-AA530A3A9C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00C49310-AA76-4DBC-A4D6-AA530A3A9C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00C49310-AA76-4DBC-A4D6-AA530A3A9C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00C49310-AA76-4DBC-A4D6-AA530A3A9C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B672915-F753-49A8-8FF3-CA03B4BA662F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B672915-F753-49A8-8FF3-CA03B4BA662F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B672915-F753-49A8-8FF3-CA03B4BA662F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B672915-F753-49A8-8FF3-CA03B4BA662F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB46DD8E-E39F-4A0D-8384-F3C1686515D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB46DD8E-E39F-4A0D-8384-F3C1686515D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB46DD8E-E39F-4A0D-8384-F3C1686515D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB46DD8E-E39F-4A0D-8384-F3C1686515D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8C031828-FFDA-4515-9A73-ACEBBC7FD2F1} = {46577714-3704-472D-9BB8-CDB612EFC7EE}
+		{68E2BD7C-3BF8-478D-B34E-83178639F49B} = {3DAA13C5-C8D4-4234-AE3F-DCD681A472D1}
+		{8A802E50-DE68-41A8-9A59-1A03FEEE3BEF} = {7E82642C-C119-4297-8573-49221AB4E052}
+		{7196C3D8-662D-474F-ABAC-300F36DA11EB} = {46577714-3704-472D-9BB8-CDB612EFC7EE}
+		{00C49310-AA76-4DBC-A4D6-AA530A3A9C96} = {AF620FAB-4859-4AD5-B4CF-7A4846B50F5A}
+		{2B672915-F753-49A8-8FF3-CA03B4BA662F} = {AF620FAB-4859-4AD5-B4CF-7A4846B50F5A}
+		{DB46DD8E-E39F-4A0D-8384-F3C1686515D2} = {7E82642C-C119-4297-8573-49221AB4E052}
+	EndGlobalSection
+EndGlobal
