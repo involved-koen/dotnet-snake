@@ -1,7 +1,6 @@
 using Koen.DotNet.Snake.Core.Domain;
 using Microsoft.AspNetCore.Identity;
 
-
 namespace Koen.DotNet.Snake.Presentation.Web.Components.Account;
 
 internal sealed class IdentityUserAccessor(

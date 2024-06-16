@@ -10,7 +10,7 @@ public static class DataAccessServiceRegistration
     {
         var connectionString = configuration.GetConnectionString("Database") ??
                                throw new InvalidOperationException("Connection string 'Database' not found.");
-        
+
         services.AddDbContext<SnakeDbContext>(options => options.UseSqlServer(connectionString));
     }
 }

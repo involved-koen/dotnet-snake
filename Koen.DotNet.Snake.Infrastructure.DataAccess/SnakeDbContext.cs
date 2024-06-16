@@ -7,5 +7,4 @@ namespace Koen.DotNet.Snake.Infrastructure.DataAccess;
 public class SnakeDbContext(DbContextOptions<SnakeDbContext> options)
     : IdentityDbContext<ApplicationUser>(options)
 {
-    
 }

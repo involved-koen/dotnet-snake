@@ -1,11 +1,11 @@
 using Koen.DotNet.Snake.Core.Domain;
 using Koen.DotNet.Snake.Infrastructure.DataAccess;
 using Koen.DotNet.Snake.Infrastructure.Identity;
-using Microsoft.AspNetCore.Components.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Koen.DotNet.Snake.Presentation.Web.Client.Pages;
 using Koen.DotNet.Snake.Presentation.Web.Components;
 using Koen.DotNet.Snake.Presentation.Web.Components.Account;
+using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.Identity;
 using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);

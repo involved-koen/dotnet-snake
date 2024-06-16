@@ -1,17 +1,16 @@
 using System.Security.Claims;
 using System.Text.Json;
 using Koen.DotNet.Snake.Core.Domain;
+using Koen.DotNet.Snake.Presentation.Web.Components.Account.Pages;
+using Koen.DotNet.Snake.Presentation.Web.Components.Account.Pages.Manage;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
-using Koen.DotNet.Snake.Presentation.Web.Components.Account.Pages;
-using Koen.DotNet.Snake.Presentation.Web.Components.Account.Pages.Manage;
 
-
-namespace Microsoft.AspNetCore.Routing;
+namespace Koen.DotNet.Snake.Presentation.Web.Components.Account;
 
 internal static class IdentityComponentsEndpointRouteBuilderExtensions
 {
