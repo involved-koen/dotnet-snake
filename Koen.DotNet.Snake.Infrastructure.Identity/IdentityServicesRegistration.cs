@@ -1,5 +1,6 @@
 ﻿using Koen.DotNet.Snake.Core.Domain;
-using Koen.DotNet.Snake.Infrastructure.DataAccess;
+using Koen.DotNet.Snake.Infrastructure.DataAccess.EF;
+using Koen.DotNet.Snake.Infrastructure.DataAccess.EF.Configuration;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 

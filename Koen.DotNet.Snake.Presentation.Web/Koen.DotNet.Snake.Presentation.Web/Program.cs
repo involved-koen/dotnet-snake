@@ -1,5 +1,5 @@
 using Koen.DotNet.Snake.Core.Domain;
-using Koen.DotNet.Snake.Infrastructure.DataAccess;
+using Koen.DotNet.Snake.Infrastructure.DataAccess.EF.Configuration;
 using Koen.DotNet.Snake.Infrastructure.Identity;
 using Koen.DotNet.Snake.Presentation.Web.Client.Pages;
 using Koen.DotNet.Snake.Presentation.Web.Components;
@@ -29,7 +29,7 @@ builder.Services.AddAuthentication(options =>
     })
     .AddIdentityCookies();
 
-builder.Services.AddSnakeDataAccessServices(builder.Configuration);
+builder.Services.AddSnakeDataAccessCosmosDbServices(builder.Configuration);
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 

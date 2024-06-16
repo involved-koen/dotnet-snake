@@ -8,7 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Inftastructure", "3. Inf
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Presentation", "4. Presentation", "{AF620FAB-4859-4AD5-B4CF-7A4846B50F5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koen.DotNet.Snake.Infrastructure.DataAccess", "Koen.DotNet.Snake.Infrastructure.DataAccess\Koen.DotNet.Snake.Infrastructure.DataAccess.csproj", "{8C031828-FFDA-4515-9A73-ACEBBC7FD2F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koen.DotNet.Snake.Infrastructure.DataAccess.EF", "Koen.DotNet.Snake.Infrastructure.DataAccess.EF\Koen.DotNet.Snake.Infrastructure.DataAccess.EF.csproj", "{8C031828-FFDA-4515-9A73-ACEBBC7FD2F1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koen.DotNet.Snake.Core.Domain", "Koen.DotNet.Snake.Core.Domain\Koen.DotNet.Snake.Core.Domain.csproj", "{68E2BD7C-3BF8-478D-B34E-83178639F49B}"
 EndProject

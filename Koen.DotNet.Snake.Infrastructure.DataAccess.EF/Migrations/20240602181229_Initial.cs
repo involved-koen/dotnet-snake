@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Koen.DotNet.Snake.Infrastructure.DataAccess.Migrations
+namespace Koen.DotNet.Snake.Infrastructure.DataAccess.EF.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration

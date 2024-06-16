@@ -12,7 +12,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Koen.DotNet.Snake.Application.Contracts\Koen.DotNet.Snake.Application.Contracts.csproj" />
-      <ProjectReference Include="..\Koen.DotNet.Snake.Infrastructure.DataAccess\Koen.DotNet.Snake.Infrastructure.DataAccess.csproj" />
+      <ProjectReference Include="..\Koen.DotNet.Snake.Infrastructure.DataAccess.EF\Koen.DotNet.Snake.Infrastructure.DataAccess.EF.csproj" />
     </ItemGroup>
 
 </Project>
