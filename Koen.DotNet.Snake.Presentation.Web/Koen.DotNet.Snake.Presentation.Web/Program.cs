@@ -10,6 +10,8 @@ using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+bool useCosmos = true;
+
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
@@ -29,7 +31,10 @@ builder.Services.AddAuthentication(options =>
     })
     .AddIdentityCookies();
 
-builder.Services.AddSnakeDataAccessCosmosDbServices(builder.Configuration);
+if (useCosmos)
+    builder.Services.AddSnakeDataAccessCosmosDbServices(builder.Configuration);
+else
+    builder.Services.AddSnakeDataAccessSqlServerServices(builder.Configuration);
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
@@ -41,11 +46,15 @@ builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSe
 
 var app = builder.Build();
 
+if (useCosmos)
+    await app.Services.EnsureDatabaseCreated();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseWebAssemblyDebugging();
-    app.UseMigrationsEndPoint();
+    if (!useCosmos)
+        app.UseMigrationsEndPoint();
 }
 else
 {

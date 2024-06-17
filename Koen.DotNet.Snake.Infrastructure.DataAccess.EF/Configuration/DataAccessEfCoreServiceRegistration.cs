@@ -12,7 +12,7 @@ public static class DataAccessEfCoreServiceRegistration
         var connectionString = configuration.GetConnectionString("SqlServer") ??
                                throw new InvalidOperationException("Connection string 'SqlServer' not found.");
 
-        services.AddDbContext<SnakeDbContext>(options => options.UseSqlServer(connectionString));
+        services.AddDbContext<ISnakeDbContext, SnakeDbContext>(options => options.UseSqlServer(connectionString));
     }
     
     public static void AddSnakeDataAccessCosmosDbServices(this IServiceCollection services, IConfiguration configuration)
@@ -20,7 +20,7 @@ public static class DataAccessEfCoreServiceRegistration
         var settings =
             configuration.BindAndValidateConfiguration<CosmosDbSettings, CosmosDbSettingsValidator>("CosmosDbSettings");
 
-        services.AddDbContext<SnakeDbContext>(options => options.UseCosmos(settings.Endpoint, settings.Key, settings.Database));
+        services.AddDbContext<ISnakeDbContext, SnakeDbContext>(options => options.UseCosmos(settings.Endpoint, settings.Key, settings.Database));
     }
 
     public static async Task EnsureDatabaseCreated(this IServiceProvider serviceProvider)
